@@ -1,0 +1,9 @@
+1)Commnad to check the containers in a pod 
+--------------------------------------------
+    kubectl get pods green -o jsonpath='{.spec.containers[*].name}'
+
+
+2) How to create a pod with dsired containers 
+    
+
+
