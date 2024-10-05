@@ -16,4 +16,4 @@ spec:
   - name: keyvaluepair1
     image: redis
     ports:
-    - containerPort: 6360
+    - containerPort: 6379
