@@ -9,8 +9,11 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-  - name: keyvaluepair
+  - name: keyvaluepair2
     image: redis
     ports:
     - containerPort: 6379
-  
+  - name: keyvaluepair1
+    image: redis
+    ports:
+    - containerPort: 6360
