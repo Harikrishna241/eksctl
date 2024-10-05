@@ -9,24 +9,8 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-  containers:
-  - name: nginx-2
-    image: nginx:1.14.2
+  - name: keyvaluepair
+    image: redis
     ports:
-    - containerPort: 80
-  containers:
-  - name: nginx-3
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
-  containers:
-  - name: nginx-4
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
-
-  containers:
-  - name: nginx-5
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
+    - containerPort: 6379
+  

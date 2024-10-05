@@ -14,5 +14,8 @@ tr -s '[[:space:]]' '\n' |\
 sort |\
 uniq -c
 
+3) how list all containers in a pod 
+kubectl get pod -o="custom-columns=NAME:.metadata.name,INIT-CONTAINERS:.spec.initContainers[*].name,CONTAINERS:.spec.containers[*].name"
+
 
 
