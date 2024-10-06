@@ -20,3 +20,22 @@ kubectl get pod -o="custom-columns=NAME:.metadata.name,INIT-CONTAINERS:.spec.ini
 If any cluster not deleted any eksctl
 --------------------------------------
 aws --region $REGION cloudformation delete-stack --stack-name eksctl-$CLUSTER_NAME-cluster
+
+If the cluster not deleting properly:
+4) eksctl delete cluster -f eksctl.yaml  --disable-nodegroup-eviction
+
+to enter to a pod ,bekow is the command 
+---------------------------------------
+kubectl exec -n green -it nginx-t-6997f8fcff-rxfvq -- bash
+
+to check the basic logs of a pod if the pod is in pending state 
+---------------------------------------------------------------
+kubectl  describe pod nginx-t-6997f8fcff-sl8x5 -n green
+it will describes the basic info of the logs whther it got scheduled or not and the reason ,why it not got scheduled 
+
+https://sysdig.com/blog/kubernetes-pod-pending-problems/
+
+three resons why he pod is in pending state ;
+1) Persistent volume; sock shop data volume
+2) Confimap dependencies : sock shop configmap
+3) Secrets : sock shop certs
