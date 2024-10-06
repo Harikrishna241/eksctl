@@ -7,7 +7,7 @@ spec:
   selector:
     app: nginx-t
   ports:
-    - port: 8080
+    - port: 80
       # By default and for convenience, the `targetPort` is set to
       # the same value as the `port` field.
       targetPort: 8080
