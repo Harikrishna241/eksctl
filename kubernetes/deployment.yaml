@@ -28,7 +28,7 @@ spec:
               protocol: TCP
 ---
 apiVersion: v1
-kind: Service
+kind: nodeport
 metadata:
   namespace: green
   name: nginx-t-service

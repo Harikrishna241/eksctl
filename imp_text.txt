@@ -39,3 +39,26 @@ three resons why he pod is in pending state ;
 1) Persistent volume; sock shop data volume
 2) Confimap dependencies : sock shop configmap
 3) Secrets : sock shop certs
+
+kubectl get – List resources
+kubectl describe – Show detailed information about a resource
+kubectl apply – Apply a configuration to a resource by filename or stdin
+kubectl create – Create a resource from a file or from stdin
+kubectl delete – Delete resources by filenames, resources and names, or by using the resources and label selector.
+
+
+Significance of ‘Kubectl’ Command
+‘kubectl’ is a crucial component of the Kubernetes ecosystem. kubectl commands are highly useful for carrying out a variety of tasks related to managing and interacting with a Kubernetes cluster. It mainly helps in:
+
+Cluster management: kubectl provides a simple and convenient way to manage the resources in a Kubernetes cluster, including pods, services, Kubernetes deployments, and other components.
+Application deployment: kubectl can be used to deploy, update, and manage the applications running on a Kubernetes cluster. It supports deployment strategies such as rolling updates and blue-green deployments.
+Resource management: kubectl allows you to manage the resources in a cluster, including scaling, updating, and deleting resources.
+Debugging and troubleshooting: kubectl provides various commands and options to help you debug problems with your cluster and its components, including pods, services, and deployments.
+Automation: kubectl can be easily integrated into scripts and automation workflows to manage your cluster in an automated and repeatable manner.
+Overall, kubectl is a powerful tool that makes it easy to manage and interact with a Kubernetes cluster, making it a critical component for DevOps and cloud-native infrastructure teams.
+
+
+To get ipaddress of all pods in a node:
+----------------------------------------
+kubectl get pods --output=wide -n green
+
