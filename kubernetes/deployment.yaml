@@ -34,8 +34,7 @@ metadata:
   name: nginx-t-service
 spec:
   selector:
-    matchLabels:
-      app: nginx-t
+    app: nginx-t
   ports:
     - protocol: TCP
       port: 80
