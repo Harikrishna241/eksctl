@@ -17,7 +17,7 @@ spec:
       # will allocate a port from a range (default: 30000-32767)
       nodePort: 32590
       name: http
-      protocol: tcp
+      protocol: TCP
 ---
 apiVersion: apps/v1
 kind: Deployment
