@@ -62,3 +62,6 @@ To get ipaddress of all pods in a node:
 ----------------------------------------
 kubectl get pods --output=wide -n green
 
+    or 
+kubectl get pods -o wide 
+

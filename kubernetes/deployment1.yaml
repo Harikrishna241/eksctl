@@ -11,12 +11,13 @@ spec:
     - port: 80
       # By default and for convenience, the `targetPort` is set to
       # the same value as the `port` field.
-      targetPort: 8080
+      targetPort: 80
       # Optional field
       # By default and for convenience, the Kubernetes control plane
       # will allocate a port from a range (default: 30000-32767)
       nodePort: 32590
       name: http
+      protocol: Tcp
 ---
 apiVersion: apps/v1
 kind: Deployment
